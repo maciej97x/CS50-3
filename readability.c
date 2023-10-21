@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 
 int main(void)
 
@@ -13,6 +14,7 @@ int main(void)
 
     for (int i = 0; i < strlen(text); i++)
     {
-        if 
+        if (isalpha(text[i]))
+        letters++;
     }
 }
