@@ -67,8 +67,8 @@ int main(int argc, string argv[])
 bool vote(string name)
 {
     // TODO
-    for(int i = 0; i i < candidate_count; i++)
-    if(strcmp(name,candidates[i.].name == 0))
+    for(int i = 0; i < candidate_count; i++)
+    if(strcmp(name,candidates[i].name == 0))
     {
         candidates[i].votes++;
         return true;
@@ -80,8 +80,23 @@ bool vote(string name)
 void print_winner(void)
 {
     // TODO
-    int maximum votes = 0;
+    int maximumvotes = 0;
     for(i = 0; i < candidate_count; i++)
+    {
+        if(candidates[i].votes > maximumvotes)
+        {
+            maximumvotes = candidates[i].votes;
+        }
+    }
+    for(i = 0; i < candidate_count; i++)
+    {
+         if(candidates[i].votes == maximumvotes)
+         {
+            printf("%s\n", candidates[i].name)
+         }
+
+    }
+
 
     return;
 }
