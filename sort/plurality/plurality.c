@@ -68,6 +68,10 @@ bool vote(string name)
 {
     // TODO
     for(int i = 0; i i < candidate_count; i++)
+    if(name == candidates[i.name])
+    {
+        candidates[i].votes++;
+    }
     return false;
 }
 
