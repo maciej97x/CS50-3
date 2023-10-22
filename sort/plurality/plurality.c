@@ -80,5 +80,8 @@ bool vote(string name)
 void print_winner(void)
 {
     // TODO
+    int maximum votes = 0;
+    for(i = 0; i < candidate_count; i++)
+
     return;
 }
