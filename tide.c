@@ -218,7 +218,7 @@ void print_winner(void)
         {
             break;
         }
-        else if(col =+ candidates - 1)
+        else if(col == candidates - 1)
         {
             printf("%s", candidates[row]);
          }
