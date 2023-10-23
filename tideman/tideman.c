@@ -156,7 +156,7 @@ int pair_weight(i)
 void sort_pairs(void)
 {
     for (int i = pair_count - 1; i >= 0; i--)
-
+    {
     int min_weight = pair_weight(i);
     int min_idx = 1;
     for(int j = i-1; j >= 0; j--)
@@ -167,7 +167,7 @@ void sort_pairs(void)
             min_idx = j;
         }
     }
-
+    }
     pair temp = pairs[min_idx];
     pairs[min_idx] = pairs[i];
     pairs[i] = temp;
