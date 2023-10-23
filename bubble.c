@@ -16,17 +16,15 @@ int main(void)
     // convert the string into decimal
     for (int i = 0, n = strlen(message); i < n; i++)
     {
-        int decimal = (int) message[i];
-
-        // This moves the bits to the left starting at 7 places and uses the bitwise & 1 operator
-        // to check the right most bit for the "on" position
-        // This way the bit can be printed out from left to right
-        for (int j = BITS_IN_BYTE - 1; j >= 0; j--)
         {
-            int bit = (decimal >> j) & 1;
-            print_bulb(bit);
+      int binary[] = {0, 0, 0, 0, 0, 0, 0, 0};
+      ind decimal = message[i;
+      int j = 0;
+      while (decimal >)
+
+
         }
-        printf("\n");
+
     }
 }
 
