@@ -167,11 +167,13 @@ void sort_pairs(void)
             min_idx = j;
         }
     }
-    }
+
+
     pair temp = pairs[min_idx];
     pairs[min_idx] = pairs[i];
     pairs[i] = temp;
     return;
+    }
 }
 bool has_cycle(int winner, int loser)
 {
@@ -183,7 +185,7 @@ bool has_cycle(int winner, int loser)
     {
         if(locked[loser][i] == true && has_cycle(winner,i))
         {
-            return true
+            return true;
         }
     }
 }
