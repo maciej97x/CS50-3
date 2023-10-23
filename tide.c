@@ -188,6 +188,7 @@ bool has_cycle(int winner, int loser)
             return true;
         }
     }
+    return false;
 }
 
 // Lock pairs into the candidate graph in order, without creating cycles
