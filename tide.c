@@ -213,14 +213,16 @@ void print_winner(void)
     for(int row = 0; row < candidate_count; row++)
     {
         for(int col = 0; col < candidate_count; col++)
+        {
         if(locked[row][col] == true)
         {
             break;
         }
-        else if(col == candidate - 1)
+        else if(col == candidates - 1)
         {
             printf("%s", candidates[row]);
         }
+    }
     }
     // TODO
     return;
