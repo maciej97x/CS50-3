@@ -154,6 +154,7 @@ int pair_weight(i)
 // Sort pairs in decreasing order by strength of victory
 void sort_pairs(void)
 {
+    for (int i = )
     // TODO
     return;
 }
