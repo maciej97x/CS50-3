@@ -14,7 +14,7 @@ bool locked[MAX][MAX];
 // Each pair has a winner, loser
 typedef struct
 {
-    int winner;a
+    int winner;
     int loser;
 }
 pair;
