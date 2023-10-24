@@ -128,7 +128,7 @@ int main(int argc, string argv[])
 bool vote(int voter, int rank, string name)
 {
     // TODO
-    for (int = 0; i < candidate_count; i++)
+    for (int i = 0; i < candidate_count; i++)
     {
         if(strcmp(candidates[i].name, name) == 0)
         {
@@ -175,6 +175,15 @@ bool print_winner(void)
 int find_min(void)
 {
     // TODO
+    int min = voter_count;
+    for(int i = 0; i < candidate_count; i++)
+    {
+        if (candidates[i].votes < min && candidates[i].eliminated == false)
+        {
+            min = candidates[i].votes;
+        }
+    }
+
     return 0;
 }
 
