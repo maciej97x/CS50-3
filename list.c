@@ -28,6 +28,6 @@ free(list);
 list = tmp;
 for (int i = 0; i < 3; i++)
 {
-    printf("%i\n", list[i]);
+    printf("%i\n", tmp[i]);
 }
 }
