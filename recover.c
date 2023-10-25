@@ -21,8 +21,8 @@ int main(int argc, char *argv[])
     unsigned char buffer[512];
     int count_image = 0;
 
-    FILE *output_file == NULL;
-    char *filename == malloc(8* sizeof(char));
+    FILE *output_file = NULL;
+    char *filename = malloc(8* sizeof(char));
 
     while (fread(buffer, sizeof(char), 512, input_file))
     {
