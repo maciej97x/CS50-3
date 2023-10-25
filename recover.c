@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
     }
     if (output_file != NULL)
     {
-        fwrite(buffer, sizeof(char), 5122, output_file);
+        fwrite(buffer, sizeof(char), 512, output_file);
 
     }
 
