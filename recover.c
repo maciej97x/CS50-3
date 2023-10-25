@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
-typedef uin8_t BYTE;
+typedef uint8_t BYTE;
 
 int main(int argc, char *argv[])
 {
