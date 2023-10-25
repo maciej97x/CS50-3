@@ -22,7 +22,6 @@ if (tmp == NULL)
 list = tmp;
 list[3] = 4;
 
-list = tmp;
 for (int i = 0; i < 3; i++)
 {
     printf("%i\n", list[i]);
