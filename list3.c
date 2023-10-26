@@ -39,7 +39,9 @@ int main(int argc, char *argv[])
     ptr = list;
     while (ptr != NULL)
     {
+        node *next = ptr->next;
         free(ptr);
-        
+        ptr = next;
+
     }
 }
