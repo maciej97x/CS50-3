@@ -4,7 +4,7 @@
 typedef struct node
 {
     int number;
-    struct node *next
+    struct node *next;
 }
 node;
 
@@ -33,6 +33,6 @@ int main(int argc, char *argv[])
     while (ptr != NULL)
     {
         printf("%i\n", ptr->number);
-        ptr = 
+        ptr = ptr->next;
     }
 }
