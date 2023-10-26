@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
         int number = atoi(argv[i]);
 
         node *n = malloc(sizeof(node));
-        if (n ==NULL)
+        if (n == NULL)
         {
             return 1;
         }
