@@ -17,13 +17,13 @@ int main(int argc, char *argv[])
     {
         int number = atoi(argv[i]);
 
-        node *n = malloc(sizeof(node))
+        node *n = malloc(sizeof(node));
         if (n ==NULL)
         {
             return 1;
         }
         n->number = number;
-        n->next - NULL;
+        n->next = NULL;
 
         n->next = list;
         list = n;
