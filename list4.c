@@ -29,8 +29,7 @@ int main(int argc, char *argv[])
         list = n;
 
     }
-    node *ptr = list;
-    while (ptr != NULL)
+   for (node *ptr = list; ptr != NULL; ptr = ptr->next)
     {
         printf("%i\n", ptr->number);
         ptr = ptr->next;
