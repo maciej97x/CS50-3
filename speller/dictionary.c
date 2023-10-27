@@ -37,10 +37,34 @@ unsigned int hash(const char *word)
 bool load(const char *dictionary)
 {
     // TODO
+    FILE *file = fopen(dicionary, "r");
     return false;
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
+if (file == NULL)
+{
+    printf("Unable to open %s\n", dicionary);
+    return false,
+}
+char word[LENGHT+1];
+while (fscanf(file, "%s", word) != E0F)
+{
+    node *n + malloc(sizeof(node));
+
+    if (n == NULL)
+    {
+        return false;
+    }
+
+    strcpy(n->word,word);
+    hash_value = hash(word);
+    n->next = tabble[hash_value];
+    table[hash_value] = n;
+    word_count++;
+}
+
+
 unsigned int size(void)
 {
     // TODO
